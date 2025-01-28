@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Food Recipe API</title>
+  </head>
+  <body class="bg-gray-500">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl text-white font-bold my-10">
+        Search Your Choice Meal🍜
+      </h1>
+      <div
+        class="bg-white w-1/2 mx-auto p-2 border rounded-xl flex justify-between gap-2"
+      >
+        <input
+          type="text"
+          placeholder="Enter Your Meal Name..."
+          class="p-4 w-full rounded-xl border-transparent"
+          id="input"
+        />
+        <button class="btn searchBTN cursor-pointer" id="searchBTN">
+          Search
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="container mx-auto border border-gray-600 min-h-[600px] rounded-xl mt-5 p-4"
+    >
+      <h2
+        id="noMeal"
+        class="text-gray-300 text-center text-4xl mt-16 font-semibold capitalize"
+      >
+        No Meal To show..🥵
+      </h2>
+
+      <div
+        class="meal-wrapper grid grid-cols-4 gap-10 max-w-[430px]:grid-cols-1 max-sm:grid-cols-1"
+      >
+        <!-- <div class="meal-box border border-gray-400 rounded-xl">
+          <img
+            class="w-full rounded-tl-xl rounded-tr-xl h-[250px] object-cover"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR4v6GwrH0HTII7bJKDYmRWNeJ_l3qolSCLA&s"
+            alt=""
+          />
+          <div class="p-3">
+            <h2 class="heading">Leblebi Soup</h2>
+            <p class="text-gray-300 my-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Possimusvero magnam totam neque voluptatibus repudiandae quaerat
+              nostrum ipsa.
+            </p>
+            <p class="italic text-gray-950">
+              <span>Tunisian</span> <span>Vegeterian</span>
+            </p>
+            <div class="my-3">
+              <a href="#" class="btn">Watch</a>
+              <button class="px-3 text-white">View Recipe</button>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center">
+      <div
+        id="details"
+        class="overlay fixed top-0 left-0 w-full h-full flex items-center justify-center bg-[#0000005e] invisible"
+      >
+        <!-- <div class="popup bg-white w-[70%] min-h-[500px] p-10">
+          <h2 class="text-2xl font-bold mb-4">Popup Title</h2>
+          <p class="mb-6">Popup content goes here.</p>
+          <button
+            class="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded"
+          >
+            Close
+          </button>
+        </div> -->
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

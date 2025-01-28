@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.btn {
+  @apply bg-orange-400 hover:bg-orange-700 text-white px-4 py-2 rounded rounded-tr-3xl rounded-bl-3xl;
+}
+
+.searchBTN {
+  @apply rounded-[4px];
+}
+
+.heading {
+  @apply text-2xl text-white;
+}
